@@ -1,0 +1,41 @@
+body{
+    background-color: white;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+header {
+    background: lightblue;
+}
+
+header::after{
+    content:'';
+    display: table;
+    clear: both;
+}
+
+.home {
+    float: left;
+    padding-top: 15px;
+}
+
+/* 
+.logo {
+    float: left; 
+} */
+
+nav {
+    float: right;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 50px;
+}
