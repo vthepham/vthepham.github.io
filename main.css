@@ -7,6 +7,9 @@ body{
     margin: 0 auto;
 }
 
+
+/* Styling for Header*/
+
 header {
     background: lightblue;
 }
@@ -38,4 +41,21 @@ nav ul {
 nav li {
     display: inline-block;
     margin-left: 50px;
+}
+
+/* Styling for Headline/Name/Intro */
+
+.content1 {
+    width: 1920px; /* Place holder for image/picture ( NEED TO REPLACE ) */
+    height: 1080px; /* Place holder for image/picture ( NEED TO REAPLCE ) */
+    text-align: center;
+}
+
+.content2 {
+    height: 1080px;
+}
+
+.content2 h1 {
+    text-align: center;
+    height: 100px; /* Some padding inbetween 'Work' and content. */
 }
