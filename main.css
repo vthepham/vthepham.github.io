@@ -7,6 +7,13 @@ body{
     margin: 0 auto;
 }
 
+/* Setting all images the same size */
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
 
 /* Styling for Header*/
 
@@ -58,4 +65,34 @@ nav li {
 .content2 h1 {
     text-align: center;
     height: 100px; /* Some padding inbetween 'Work' and content. */
+}
+
+footer {
+    background: lightblue;
+}
+
+/* Styling for about.html page */
+
+.wheader {
+    text-align: center;
+}
+
+.pheader {
+    text-align: center;
+}
+
+/* Styling for each picture on projects */
+
+.pcontent {
+    float: left;
+    width: 300px;
+    height: 300px;
+    padding: 5px;
+}
+
+/* Clear floats fix */
+.projectcontent::after {
+    content: "";
+    clear: both;
+    display: table;
 }
