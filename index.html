@@ -3,12 +3,22 @@
     <head>
         <title> Vincent Home </title>
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="assets/css/main.css">
+        <!-- Scripts for JQuery and header and footer -->
+        <script src="assets/javascript/jquery-3.5.1.js"></script>
+        <script src="assets/javascript/main.js"></script>
+        <!-- <script>
+            $(function(){
+                $("#header").load("header.html");
+                $("#footer").load("footer.html");
+            });
+        </script> -->
     </head>
 
     <body>
-    
-    <header>
+
+    <!-- Code for header -->
+    <!-- <header>
         <div class="container">
             <a href="#" class="home"> Vincent Pham </a>
             <nav>
@@ -19,7 +29,10 @@
                 </ul>
             </nav>
         </div>
-    </header>
+    </header> -->
+
+    <!-- Load header.html -->
+    <div id="header"></div>
 
     <div class="content1">
         <h1> Vincent Pham</h1>
@@ -33,7 +46,8 @@
         <h2>Thing one</h2>
     </div>
 
-
+<!-- Code for footer -->
+<!-- 
     <footer>
         <div class="footer">
             <h4>Vincent Pham</h4>
@@ -41,9 +55,13 @@
             <h4>(Phone Number)</h4>
             <h4>email</h4>
         </div>
-    </footer>
+    </footer> -->
 
-    <script src="main.js"></script>
+    <!-- Load footer.html -->
+    <div id="footer"></div>
+
+    <!-- Scripts -->
+    <!-- <script src="assets/javascript/main.js"></script> -->
 
     </body>
 </html>
