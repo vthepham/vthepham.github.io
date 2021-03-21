@@ -1,0 +1,102 @@
+/* Styling for each picture on work */
+.pwork {
+    float: left;
+    width: 300px;
+    height: 300px;
+    padding: 5px;
+}
+/* Clear floats fix */
+.workcontent::after {
+    content:"";
+    clear: both;
+    display: table;
+}
+
+/* Container holding image and text */
+
+.image {
+    position: relative;
+}
+
+.act_image {
+    display: block;
+    width: 100%;
+}
+
+.image_overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 30%;
+    background: rgb(0,0,0,0.6);
+    color: white;
+}
+
+.image_title {
+    padding-left: 20px;
+    padding-top: 20px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.image_description {
+    padding-left: 20px;
+    padding-top: 20px;
+    font-size: 20px;
+    font-weight: 150;
+}
+
+/* Other shit */ 
+
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+/* Block on text for images over images */ 
+.imagetext {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+}
+
+/* Styling for each picture on projects */
+
+.name1 {
+    text-align: center;
+}
+
+.body {
+    text-align: center;
+}
+
+.pcontent {
+    float: left;
+    width: 300px;
+    height: 300px;
+    padding: 5px;
+}
+
+.worktab {
+    text-align: left;
+    padding-left: 15%;
+}
+
+/* Clear floats fix */
+.projectcontent::after {
+    content: "";
+    clear: both;
+    display: table;
+}

@@ -50,22 +50,50 @@ nav li {
     margin-left: 50px;
 }
 
-/* Styling for Headline/Name/Intro */
+/* Styling for Index Page */
 
-.content1 {
-    width: 1920px; /* Place holder for image/picture ( NEED TO REPLACE ) */
-    height: 1080px; /* Place holder for image/picture ( NEED TO REAPLCE ) */
-    text-align: center;
+.name {
+    /* width:1920px;
+    height: 1080px; */
+    text-align: left;
+    font-family: "Helvetica", sans-serif;
+    /* padding-top: 200px; */
+    padding-left: 15%;
+    /* font-weight: bold; */
 }
 
-.content2 {
+.body1 {
+    text-align:left;
+    font-family: "Helvetica", sans-serif;
+    padding-top: 150px;
+    padding-left: 15%;
+}
+
+.body2 {
+    text-align:left;
+    font-family: "Helvetica", sans-serif;
+    padding-left: 15%;
+}
+
+.body3 {
+    text-align: left;
+    font-family: "Helvetica", sans-serif;
+    padding-left: 15%;
+}
+
+.body3 a {
+    /* text-decoration: none; */
+    color: black;
+}
+
+/* .content2 {
     height: 1080px;
 }
 
 .content2 h1 {
     text-align: center;
-    height: 100px; /* Some padding inbetween 'Work' and content. */
-}
+    height: 100px; Some padding inbetween 'Work' and content.
+} */
 
 footer {
     background: lightblue;
@@ -79,34 +107,4 @@ footer {
 
 .pheader {
     text-align: center;
-}
-
-/* Styling for each picture on work */
-.pwork {
-    float: left;
-    width: 300px;
-    height: 300px;
-    padding: 5px;
-}
-/* Clear floats fix */
-.workcontent::after {
-    content:"";
-    clear: both;
-    display: table;
-}
-
-/* Styling for each picture on projects */
-
-.pcontent {
-    float: left;
-    width: 300px;
-    height: 300px;
-    padding: 5px;
-}
-
-/* Clear floats fix */
-.projectcontent::after {
-    content: "";
-    clear: both;
-    display: table;
 }
