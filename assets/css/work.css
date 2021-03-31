@@ -16,11 +16,31 @@
 
 .image {
     position: relative;
+    width: 25%;
+    height: 25%;
 }
 
 .act_image {
+    float: left;
+    padding-right: 20px;
+}
+
+.image_left {
     display: block;
     width: 100%;
+    /* float: left;
+    padding: 5px; */
+}
+
+.image_right {
+    display: block;
+    width: 100%;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
 }
 
 .image_overlay {
