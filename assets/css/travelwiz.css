@@ -3,3 +3,57 @@
 .title {
     text-align: center;
 }
+
+/* For float stuff */ 
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Storyboard styling (creating box and styling) */ 
+
+.storyboard {
+    text-align: center;
+}
+
+.storyblock {
+    display: inline-block;
+    width: 450px;
+    height: 575px;
+    background-color: lightblue;
+    border: 1px solid black;
+    box-sizing: border-box;
+    vertical-align: top;
+}
+
+.storyblock img {
+    width: 350px;
+    height: 350px;
+}
+
+.story_container {
+    text-align: center;
+}
+
+.story_text {
+    flex-grow: 1;
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+/* Prototype styling */
+
+.lowproto_image {
+    position: relative;
+}
+
+.highproto_image {
+    position: relative;
+}
+
+.test_image {
+    position: relative;
+}

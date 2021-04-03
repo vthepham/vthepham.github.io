@@ -6,3 +6,11 @@ $(function(){
     $("#footer").load("footer.html");
 });
 
+// Script for slideslow
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+    showSlides(slideIndex +=n);
+}
