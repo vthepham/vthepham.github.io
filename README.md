@@ -1,2 +1,0 @@
-# vthepham.github.io
-portfolio

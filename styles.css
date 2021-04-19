@@ -1,0 +1,668 @@
+body{
+  margin:0;
+  padding: 0;
+  /* background-color: #1A1D20; */
+  background-color: white;
+}
+
+/* TEXT SETTING */
+
+@font-face {
+    font-family: CircularStd-Medium;
+    src: url(CircularStd-Medium.woff);
+}
+
+@font-face {
+    font-family: CircularStd-Book;
+    src: url(CircularStd-Book.woff);
+}
+
+h1 {
+ font-family: "CircularStd-Book";
+ font-size: 32px;
+ /* color: #FFF; */
+ color:black;
+ letter-spacing: .2px;
+ line-height: 46px;
+ -webkit-font-smoothing: antialiased;
+}
+
+h2 {
+ font-family: "CircularStd-Book";
+ font-size: 27px;
+ /* color: #FFF; */
+ color:black;
+ line-height: 34px;
+ letter-spacing: .6px;
+ -webkit-font-smoothing: antialiased;
+}
+
+h3 {
+font-family: "CircularStd-Book";
+font-size: 15px;
+/* color: #FFF; */
+color: black;
+letter-spacing: 0.6px;
+opacity: .5; 
+-webkit-opacity: 0.5;
+-webkit-font-smoothing: antialiased;
+}
+
+h4 {
+	font-family: "CircularStd-Book";
+	font-size: 18px;
+	/* color: #FFFFFF; */
+    color:black;
+	line-height: 28px;
+	letter-spacing: 0.4px;
+	-webkit-font-smoothing: antialiased;
+}
+
+p {
+font-family: "CircularStd-Book";
+font-size: 15px;
+color: #FFF;
+letter-spacing: 0.5px;
+line-height: 27px;
+}
+
+.maxwidth {
+  max-width: 1380px;
+  display: block;
+  margin: 0 auto;
+}
+
+.nav{
+    border: none;
+    border-width:1px 0;
+    list-style:none;
+    margin:0;
+    padding:0;
+    text-align:center;
+    margin-top: 40px;
+    animation: fadein 2s;
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
+    -o-animation: fadein 2s; /* Opera */
+}
+.nav li{
+    display:inline;
+    font-family: "CircularStd-Book";
+}
+.nav a{
+    display:inline-block;
+    padding:30px;
+    text-decoration: none;
+	/* color: #FFF; */
+    color: black;
+}
+
+.inactive {
+	font-family: "CircularStd-Book";
+	font-size: 15px;
+	letter-spacing: 0.08px;
+	opacity: 50%; 
+	-webkit-opacity: 0.5;
+}
+
+.inactive:hover {
+  opacity: 100%;
+  transition-timing-function:ease-in-out;
+  -webkit-transition-duration: 0.2s; /* Safari */
+  transition-duration: 0.2s;
+}
+
+.header {
+	margin-top: 140px;
+	text-align: center;
+    animation: fadein 3s;
+    -moz-animation: fadein 3s; /* Firefox */
+    -webkit-animation: fadein 3s; /* Safari and Chrome */
+    -o-animation: fadein 3s; /* Opera */
+}
+
+.studies-fade {
+	-moz-animation: fadein 5s; /* Firefox */
+    -webkit-animation: fadein 5s; /* Safari and Chrome */
+    -o-animation: fadein 5s; /* Opera */
+}
+
+.learnmorebtn{
+  position: relative;
+  margin: 0 auto;
+  margin-top: 25px;
+  padding: 1em 2em;
+  border: 0;
+  border-radius: 30px;
+  text-align: center;
+  background-color: #FFF;
+  font-family: "CircularStd-Book";
+  font-size: 15px;
+}
+
+/* GLOW EFFECT */ 
+/* 
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -6px;
+    left:-6px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 12px);
+    height: calc(100% + 12px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .2s ease-in-out;
+    border-radius: 30px;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 30px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+} */
+
+/* END GLOW EFFECT */ 
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+/* Social Links */
+
+.social-wrapper {
+  width: 100%;
+  text-align: center;
+  font-size: 0;
+}
+.social {
+  display: inline-block;
+  margin: 0 auto;
+  font-size: 0;
+}
+
+.social a:hover{
+	 -webkit-transform: scale(.9);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(.9);   
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(.9);
+    transition: all 200ms ease-in;
+    transform: scale(.9);
+}
+.social a {
+  display: inline-block;
+  margin: 17px;
+  margin-top: 30px;
+  font-size: auto;
+}
+
+.label {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	margin-top: 50px;
+}
+
+.label:after {
+    content: "";
+    width: 100%;
+    display: block;
+    border-bottom: 1px solid #7A828A;
+    opacity: 50%;
+    margin-left: 10px;
+    flex:1;
+}
+
+.case-block {
+	margin-top: 75px;
+}
+
+.logo {
+	margin-bottom: 40px;
+}
+
+.esg-logo {
+	margin-bottom: 40px;
+	width: 74px;
+}
+
+.regal-logo {
+	margin-bottom: 40px;
+	width: 40px;
+}
+
+.pills {
+	display: inline-block;
+	background-color: #2D2E30;
+	padding-left: 12px;
+	padding-right: 12px;
+	border-radius: 8px;
+	margin-top: 10px;
+	margin-right: 8px;
+}
+
+.casestudybtn{
+  position: relative;
+  margin: 0 auto;
+  margin-top: 40px;
+  padding: .8em 1.8em;
+  border: 0;
+  border-radius: 30px;
+  text-align: center;
+  background-color: #1A1D20;
+  font-family: "CircularStd-Book";
+  font-size: 15px;
+  color: #FFF;
+  border-style: solid;
+  border-width:  1px;
+  border-color: #FFF;
+}
+
+.home-asset {
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+	margin-top: 60px;
+}
+
+.alliant-asset {
+	display: block;
+	margin: 0 auto;
+	width: 90%;
+	margin-top: 0px;
+}
+
+.twine-asset {
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+	margin-top: 0px;
+}
+
+.old-alliant-asset {
+	display: block;
+	margin: 0 auto;
+	width: 50%;
+	margin-top: 50px;
+
+}
+
+.twine-logos {
+	display: block;
+	margin: 0 auto;
+	width: 85%;
+	margin-top: 50px;
+	margin-bottom: 45px;
+}
+
+.asset {
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+	margin-top: 60px;
+	transition: transform .2s ease-in-out;
+	/* transform-origin: right;*/
+	 /* Animation */
+}
+
+.asset:hover{
+	transform: scale(1.4); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+.asset-phones {
+	display: block;
+	margin: 0 auto;
+	width: 90%;
+	margin-top: 80px;
+}
+
+.about-header {
+	margin-top: 100px;
+	text-align: left;
+    animation: fadein 3s;
+    -moz-animation: fadein 3s; /* Firefox */
+    -webkit-animation: fadein 3s; /* Safari and Chrome */
+    -o-animation: fadein 3s; /* Opera */
+}
+.about-header1 {
+	margin-top: 100px;
+	text-align: left;
+    animation: fadein 3s;
+    -moz-animation: fadein 3s; /* Firefox */
+    -webkit-animation: fadein 3s; /* Safari and Chrome */
+    -o-animation: fadein 3s; /* Opera */
+}
+
+.about-social-ul {
+	list-style: none;
+    padding: 0;
+    list-style-type: none;
+    float: left;
+}
+
+.about-social-ul li {
+	display:block; 
+	margin-top: 20px;
+}
+
+.about-social-ul li {
+	display:block; 
+	margin-top: 20px;
+}
+
+.about-social-ul li:hover{
+	 -webkit-transform: scale(.9);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(.9);   
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(.9);
+    transition: all 200ms ease-in;
+    transform: scale(.9);
+}
+
+.about-header-image {
+	float: left;
+	width: 80%;
+	margin-left: 40px;
+	margin-top: 20px;
+}
+
+.about-content{
+	display: inline-block;
+	text-align: left;
+    animation: fadein 3s;
+    -moz-animation: fadein 3s; /* Firefox */
+    -webkit-animation: fadein 3s; /* Safari and Chrome */
+    -o-animation: fadein 3s; /* Opera */	
+}
+
+.container {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+}
+
+.container:hover .overlay {
+  opacity: .7;
+}
+
+.text {
+  color: white;
+  font-family: "CircularStd-Book";
+  font-size: 16px;
+  line-height: 22px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.content-block {
+	margin-top: 50px;
+}
+
+.content-pill {
+	background-color: #202327;
+	padding: 20px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	border-radius: 8px;
+	margin-top: 25px;
+	width:95%;
+}
+
+.case-study-btn{
+  position: relative;
+  margin: 0 auto;
+  display: block;
+  margin-top: 25px;
+  padding: 1em 2em;
+  border: 0;
+  border-radius: 30px;
+  text-align: center;
+  background-color: #FFF;
+  font-family: "CircularStd-Book";
+  font-size: 15px;
+}
+
+.homebtn{
+  position: relative;
+  display:block;
+  margin: 0 auto;
+  margin-top: 25px;
+  padding: .8em 1.8em;
+  border: 0;
+  border-radius: 30px;
+  text-align: center;
+  background-color: #1A1D20;
+  font-family: "CircularStd-Book";
+  font-size: 15px;
+  color: #FFF;
+  border-style: solid;
+  border-width:  1px;
+  border-color: #FFF;
+}
+
+.footer-block {
+	margin-top: 50px;
+	margin-bottom:75px;
+}
+
+.phone-asset {
+	display: block;
+	margin: 0 auto;
+	width: 80%;
+	margin-top: 60px;
+	transition: transform .2s ease-in-out;
+	/* transform-origin: right;*/
+	 /* Animation */
+}
+
+.phone-asset:hover{
+	transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.vimeo {
+	width: 640px;
+	height: 300px;
+	margin-top: 25px;
+}
+
+.regal-asset {
+	display: block;
+	margin: 0 auto;
+	width: 100%;	
+	margin-top: -8%;
+}
+
+.nextdoor-asset {
+	display: block;
+	margin: 0 auto;
+	width: 100%;	
+	margin-top: 25px;
+}
+
+#scroll {
+    position:fixed;
+    right: 50px;
+    bottom:50px;
+    cursor:pointer;
+    width:50px;
+    height:50px;
+    background-color:#3498db;
+    text-indent:-9999px;
+    display:none;
+    -webkit-border-radius:60px;
+    -moz-border-radius:60px;
+    border-radius:60px;
+   box-shadow: 0 2px 10px 0 rgba(0,0,0,0.60);
+}
+
+#scroll span {
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-left:-8px;
+    margin-top:-12px;
+    height:0;
+    width:0;
+    border:8px solid transparent;
+    border-bottom-color:#1A1D20;
+}
+
+#scroll:hover {
+    background-color:#e74c3c;
+    opacity:1;filter:"alpha(opacity=100)";
+    -ms-filter:"alpha(opacity=100)";
+}
+
+#scroll:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -6px;
+    left:-6px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 12px);
+    height: calc(100% + 12px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .2s ease-in-out;
+    border-radius: 30px;
+}
+
+#scroll:active {
+    color: #000
+}
+
+#scroll:active:after {
+    background: transparent;
+}
+
+#scroll:hover:before {
+    opacity: 1;
+}
+
+#scroll:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: white;
+    left: 0;
+    top: 0;
+    border-radius: 30px;
+}
+
+
+@media screen and (max-width: 48em) {
+	.maxwidth {
+		width: 90%;
+		display: block;
+		margin: 0 auto;
+	}
+
+	.about-header-image {
+		float: left;
+		width: 75%;
+		margin-left: 30px;
+		margin-top: 20px;
+	}
+
+	.mobile-width {
+		width: 85%;
+		margin: 0 auto;
+		margin-top: 10px;
+	}
+
+	.alliant-asset {
+		display: block;
+		margin: 0 auto;
+		width: 80%;
+		margin-top: 50px;
+	}
+
+	.vimeo {
+		width: 100%;
+	}
+
+	.old-alliant-asset {
+		display: block;
+		margin: 0 auto;
+		width: 75%;
+		margin-top: 50px;
+	}
+	.regal-asset {
+		display: block;
+		margin: 0 auto;
+		width: 100%;	
+		margin-top: 0;
+	}
+
+	.header {
+		margin-top: 50px;
+		text-align: center;
+	    animation: fadein 3s;
+	    -moz-animation: fadein 3s; /* Firefox */
+	    -webkit-animation: fadein 3s; /* Safari and Chrome */
+	    -o-animation: fadein 3s; /* Opera */
+	}
+	.about-header1 {
+		margin-top: 50px;
+		text-align: left;
+	    animation: fadein 3s;
+	    -moz-animation: fadein 3s; /* Firefox */
+	    -webkit-animation: fadein 3s; /* Safari and Chrome */
+	    -o-animation: fadein 3s; /* Opera */
+	}
+}
