@@ -392,9 +392,17 @@ line-height: 27px;
     transform: scale(.9);
 }
 
-.about-header-image {
+/* .about-header-image {
 	float: left;
 	width: 80%;
+	margin-left: 40px;
+	margin-top: 20px;
+} */
+
+.about-header-image {
+	float: left;
+	width: 70%;
+    height: 70%;
 	margin-left: 40px;
 	margin-top: 20px;
     margin-right: 20px;
