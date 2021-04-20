@@ -394,7 +394,8 @@ line-height: 27px;
 
 .about-header-image {
 	float: left;
-	width: 80%;
+	width: 50%;
+    height: 50%;
 	margin-left: 40px;
 	margin-top: 20px;
 }
