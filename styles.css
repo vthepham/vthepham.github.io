@@ -121,11 +121,11 @@ line-height: 27px;
     -o-animation: fadein 3s; /* Opera */
 }
 
-.studies-fade {
-	-moz-animation: fadein 5s; /* Firefox */
-    -webkit-animation: fadein 5s; /* Safari and Chrome */
-    -o-animation: fadein 5s; /* Opera */
-}
+/* .studies-fade { */
+	/* -moz-animation: fadein 5s; Firefox */
+    /* -webkit-animation: fadein 5s; Safari and Chrome */
+    /* -o-animation: fadein 5s; Opera */
+/* } */
 
 .learnmorebtn{
   position: relative;
@@ -401,8 +401,8 @@ line-height: 27px;
 
 .about-header-image {
 	float: left;
-	width: 250px;
-    height: 250px;
+	width: 50%;
+    height: 50%;
 	margin-left: 40px;
 	margin-top: 20px;
     margin-right: 20px;
