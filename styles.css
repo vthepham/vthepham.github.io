@@ -394,16 +394,15 @@ line-height: 27px;
 
 /* .about-header-image {
 	float: left;
-	width: 50%;
-    height: 50%;
+	width: 80%;
 	margin-left: 40px;
 	margin-top: 20px;
 } */
 
 .about-header-image {
 	float: left;
-	width: 70%;
-    height: 70%;
+	width: 50%;
+    height: 50%;
 	margin-left: 40px;
 	margin-top: 20px;
     margin-right: 20px;
