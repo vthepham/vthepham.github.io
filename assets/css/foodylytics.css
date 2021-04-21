@@ -39,3 +39,12 @@
     padding-right: 30px;
 }
 
+.image_workflow{
+    display: inline-block;
+    width: 400px;
+    height: 400px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    padding-right: 100px;
+}
+
