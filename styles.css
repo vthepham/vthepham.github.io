@@ -61,7 +61,8 @@ h4 {
 p {
 font-family: "CircularStd-Book";
 font-size: 15px;
-color: #FFF;
+color:black;
+/* color: #FFF; */
 letter-spacing: 0.5px;
 line-height: 27px;
 }

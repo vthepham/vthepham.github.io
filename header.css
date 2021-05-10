@@ -1,0 +1,61 @@
+.maxwidth {
+    max-width: 1380px;
+    display: block;
+    margin: 0 auto;
+}
+
+.logo{
+    /* text-align: left; */
+    /* margin-top: 20px; */
+    padding-right: 850px;
+}
+
+.nav{
+    border: none;
+    border-width:1px 0;
+    list-style:none;
+    margin:0;
+    padding:0;
+    text-align:center;
+    margin-top: 40px;
+    animation: fadein 2s;
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
+    -o-animation: fadein 2s; /* Opera */
+}
+
+.nav li{
+    display:inline;
+    font-family: "CircularStd-Book";
+}
+
+.nav a{
+    display:inline-block;
+    padding:30px;
+    text-decoration: none;
+    color: black;
+}
+
+.inactive {
+	font-family: "CircularStd-Book";
+	font-size: 15px;
+	letter-spacing: 0.08px;
+	opacity: 50%; 
+	-webkit-opacity: 0.5;
+}
+
+.inactive:hover {
+  opacity: 100%;
+  transition-timing-function:ease-in-out;
+  -webkit-transition-duration: 0.2s; /* Safari */
+  transition-duration: 0.2s;
+}
+
+.header {
+	margin-top: 140px;
+	text-align: center;
+    animation: fadein 3s;
+    -moz-animation: fadein 3s; /* Firefox */
+    -webkit-animation: fadein 3s; /* Safari and Chrome */
+    -o-animation: fadein 3s; /* Opera */
+}
